@@ -1,0 +1,105 @@
+.product .container {
+  position: relative;
+  max-width: 1112px;
+  margin-bottom: 200px;
+  padding-top: 126px;
+}
+
+.product__heading--background {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  max-width: 1065px;
+  width: 100%;
+  height: 200px;
+  background-image: url(../images/our-collection.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .product__heading-background {
+    background-image: url(../images/our-collection@2x.png);
+  }
+}
+
+.product-list {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.product-list__item {
+  max-width: 255px;
+}
+
+.product-list__picture {
+  margin-bottom: 70px;
+}
+
+.product__controller__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: rgba(51, 61, 75, 1);
+  text-align: center;
+}
+
+.product__controller__description {
+  margin: 0;
+  color: rgba(51, 61, 75, 1);
+  text-align: center;
+}
+
+@media only screen and (max-width: 1260px) {
+    .product .container {
+        padding-top: 60px;
+    }
+
+    .product__heading--background {
+        max-width: 690px;
+        height: 118px;
+        transform: translate(25%);
+    }
+
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-list__item {
+        display: flex;
+        align-items: center;
+        min-width: 575px;
+    }
+
+    .product-list__picture {
+        margin-bottom: 0;
+        margin-right: 35px;
+    }
+
+    .product__controller {
+        max-width: 280px;
+    }
+
+    .product__controller__heading {
+        text-align: left;
+    }
+
+    .product__controller__description {
+        text-align: left;
+    }
+}
